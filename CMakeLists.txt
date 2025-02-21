@@ -58,3 +58,13 @@ target_link_libraries(use_core
     PRIVATE
         core
 )
+
+add_executable(use_chrono)
+target_sources(use_chrono
+    PRIVATE
+        ${CMAKE_CURRENT_SOURCE_DIR}/utils/use_chrono.cpp
+)
+target_link_libraries(use_chrono
+    PRIVATE
+        core
+)
